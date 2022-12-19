@@ -89,7 +89,8 @@ plugins.withType(GroovyPlugin) {
 	// Fallback to JDK8
 	if (!mainToolchainConfigured()) {
 		compileGroovy {
-			sourceCompatibility = JavaVersion.VERSION_1_8
+//			sourceCompatibility = JavaVersion.VERSION_1_8
+			sourceCompatibility = JavaVersion.VERSION_11
 		}
 	}
 }
